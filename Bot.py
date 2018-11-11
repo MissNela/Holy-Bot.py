@@ -28,8 +28,8 @@ async def dev():
         description = "@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed",
     color = discord.Color.blue()
 )
-	await client.say(embed=embed)
-	
+    await client.say(embed=embed)
+
 @client.command()
 async def CoO():
     embed = discord.Embed(
@@ -37,7 +37,7 @@ async def CoO():
        description = "Co-Owner is @Mrs.Nela#8429!",
     color = discord.Color.dark_blue()
 )
-await client.say(embed=embed)
+    await client.say(embed=embed)
 
 @client.command()
 async def SCP():
