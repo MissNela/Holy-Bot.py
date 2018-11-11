@@ -12,14 +12,25 @@ from discord.voice_client import VoiceClient
 from discord import Game, Embed, Color, Status, ChannelType
 
 
-client = commands.Bot(command_prefix='h!')
 
-@bot.event
+
+
+
+
+client = commands.Bot(command_prefix = '>')
+
+
+players = {}
+
+status = ['>help for commands', 'With code', "Stabbing Mrs.Nela","With developer Mrs.Nela"]
+
+players = {}
+
+
+
+@client.event
 async def on_ready():
-	print('The bot is ready!')
-	print(bot.user.name)
-	print(bot.user.id)
-	print('----------------------------')
+    print("The bot is online and connected with Discord!")
 
 @bot.command(pass_context = True)
 async def dev():
