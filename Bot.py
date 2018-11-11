@@ -1,5 +1,5 @@
 import discord
-from discord.ext.commands import Client
+from discord.ext.commands import Bot
 from discord.ext import commands
 from discord.ext.commands.cooldowns import BucketType
 import asyncio
@@ -37,7 +37,7 @@ async def dev():
     embed = discord.Embed(
         title = "Bot Developer:",
         description = "@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed",
-    color = discord.Color.blue()
+    color = discord.Colour.blue()
 )
     await client.say(embed=embed)
 
@@ -46,7 +46,7 @@ async def CoO():
     embed = discord.Embed(
        title = "Co-Owner",
        description = "Co-Owner is @Mrs.Nela#8429!",
-    color = discord.Color.dark_blue()
+    color = discord.Colour.dark_blue()
 )
     await client.say(embed=embed)
 
