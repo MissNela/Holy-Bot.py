@@ -44,6 +44,6 @@ async def suggestion():
 async def extra():
 	await bot.say('same with the h!suggestion command DM my owner Kazuto Kirigaya#8757 and say i need help and he will get to you when he can')
 
-bot.run(os.getenv("BOT_TOKEN"))
+bot.run(os.getenv(BOT_TOKEN))
 
 
