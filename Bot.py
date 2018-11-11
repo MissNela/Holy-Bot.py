@@ -21,7 +21,7 @@ async def on_ready():
 	print(bot.user.id)
 	print('----------------------------')
 
-@client.command()
+@client.command(pass_context = True)
 async def dev():
     embed = discord.Embed(
         title = "Bot Developer:",
@@ -30,7 +30,7 @@ async def dev():
 )
     await client.say(embed=embed)
 
-@client.command()
+@client.command(pass_context = True)
 async def CoO():
     embed = discord.Embed(
        title = "Co-Owner",
