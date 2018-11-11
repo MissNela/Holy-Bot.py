@@ -38,7 +38,7 @@ async def dev():
 	    
 ) 
 
-   await client.say(embed=embed)
+   await client.say(embed = embed)
 		 
 @client.command(pass_context=True)
 async def CoO():
@@ -48,11 +48,11 @@ async def CoO():
         Co-Owner of this server is Mrs.Nela
         """,
         
-        color = discord.Color.orange()
+        color = discord.Color.dark_blue()
        
 )
    
-    await client.say(embed=embed)
+    await client.say(embed = embed)
 	
 		
 @bot.command()
