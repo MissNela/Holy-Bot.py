@@ -12,7 +12,7 @@ from discord.voice_client import VoiceClient
 from discord import Game, Embed, Color, Status, ChannelType
 
 
-bot=commands.Bot(command_prefix='h!')
+client = commands.Bot(command_prefix='h!')
 
 @client.event
 async def on_ready():
