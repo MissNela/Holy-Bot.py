@@ -14,7 +14,7 @@ from discord import Game, Embed, Color, Status, ChannelType
 
 bot=commands.Bot(command_prefix='h!')
 
-@bot.event
+@client.event
 async def on_ready():
 	print('The bot is ready!')
 	print(bot.user.name)
