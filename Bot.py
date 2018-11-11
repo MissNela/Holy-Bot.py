@@ -37,7 +37,7 @@ async def dev():
 	    
 ) 
 
-    await bot.send_message(embed=embed)
+        await bot.send_message(embed=embed)
 		 
 @bot.command()
 async def CoO():
@@ -48,7 +48,7 @@ async def CoO():
 	    
 )
 
-     await bot.send_message(embed=embed)
+        await bot.send_message(embed=embed)
 	
 		
 @bot.command()
