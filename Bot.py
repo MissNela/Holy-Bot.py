@@ -17,51 +17,33 @@ from discord import Game, Embed, Color, Status, ChannelType
 
 
 
-client = commands.Bot(command_prefix = 'h!')
 
 
-players = {}
+bot=commands.Bot(command_prefix='h!')
 
-status = ['>help for commands', 'With code', "Stabbing Mrs.Nela","With developer Mrs.Nela"]
-
-players = {}
-
-
-
-@client.event
+@bot.event
 async def on_ready():
-    print("The bot is online and connected with Discord!")
+	print('The bot is ready!')
+	print(bot.user.name)
+	print(bot.user.id)
+	print('----------------------------')
 
-@client.command(pass_context = True)
+@bot.command()
 async def dev():
-    embed = discord.Embed(
-        title = "Bot Developer:",
-        description = "@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed",
-    color = discord.Colour.blue()
-)
-    await client.say(embed=embed)
-
-@client.command(pass_context = True)
-async def CoO():
-    embed = discord.Embed(
-       title = "Co-Owner",
-       description = "Co-Owner is @Mrs.Nela#8429!",
-    color = discord.Colour.dark_blue()
-)
-    await client.say(embed=embed)
-
-@client.command()
+	await bot.say('@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed')
+	
+@bot.command()
 async def SCP():
-	await bot.say("well want info on the foundation i think the link is Https://SCP-wiki.com i will update this command if needed")
+	await bot.say('well want info on the foundation i think the link is Https://SCP-wiki.com i will update this command if needed')
 	
-@client.command()
+@bot.command()
 async def suggestion():
-	await bot.say("ok DM my owner Kazuto Kirigaya#8757 and say i have a suggestion and i he will get to you when he can")
+	await bot.say('ok DM my owner Kazuto Kirigaya#8757 and say i have a suggestion and i he will get to you when he can')
 	
-@client.command()
+@bot.command()
 async def extra():
-	await bot.say("same with the h!suggestion command DM my owner Kazuto Kirigaya#8757 and say i need help and he will get to you when he can")
-	
+	await bot.say('same with the h!suggestion command DM my owner Kazuto Kirigaya#8757 and say i need help and he will get to you when he can')
+
 client.run(os.getenv("BOT_TOKEN"))
 
 
