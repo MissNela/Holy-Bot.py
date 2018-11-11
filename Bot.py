@@ -1,5 +1,5 @@
 import discord
-from discord.ext.commands import Bot
+from discord.ext.commands import Client
 from discord.ext import commands
 from discord.ext.commands.cooldowns import BucketType
 import asyncio
@@ -17,7 +17,7 @@ from discord import Game, Embed, Color, Status, ChannelType
 
 
 
-client = commands.Bot(command_prefix = '>')
+client = commands.Bot(command_prefix = 'h!')
 
 
 players = {}
