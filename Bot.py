@@ -38,7 +38,7 @@ async def dev():
 	    
 ) 
 
-   await client.say(embed=embed)
+   await bot.say(embed=embed)
 		 
 @client.command(pass_context=True)
 async def CoO():
@@ -52,7 +52,7 @@ async def CoO():
        
 )
    
-    await client.say(embed=embed)
+    await bot.say(embed=embed)
 	
 		
 @bot.command()
