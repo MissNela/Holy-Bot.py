@@ -10,7 +10,7 @@ import os
 import time
 from discord.voice_client import VoiceClient
 from discord import Game, Embed, Color, Status, ChannelType
-import youtube_dl
+
 
 
 
