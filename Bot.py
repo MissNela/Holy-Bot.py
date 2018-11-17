@@ -28,14 +28,14 @@ async def on_ready():
 	print(bot.user.id)
 	print('----------------------------')
 
-@client.command(pass_context=True)
+@client.command()
 async def dev():
     
 
          
    await client.say("@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed")
 		 
-@client.command(pass_context=True)
+@client.command()
 async def CoO():
     
     await client.say("Co-Owner of server is Mrs.Nela!")
