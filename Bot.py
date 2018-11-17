@@ -28,30 +28,30 @@ async def on_ready():
 	print(bot.user.id)
 	print('----------------------------')
 
-@client.command()
+@bot.command()
 async def dev():
     
 
          
-   await client.say("@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed")
+   await bot.say("@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed")
 		 
-@client.command()
+@bot.command()
 async def CoO():
     
-    await client.say("Co-Owner of server is Mrs.Nela!")
+    await bot.say("Co-Owner of server is Mrs.Nela!")
 	
 		
-@client.command()
+@bot.command()
 async def SCP():
-	await client.say('well want info on the foundation i think the link is Https://SCP-wiki.com i will update this command if needed')
+	await bot.say('well want info on the foundation i think the link is Https://SCP-wiki.com i will update this command if needed')
 	
-@client.command()
+@bot.command()
 async def suggestion():
-	await client.say('ok DM my owner Kazuto Kirigaya#8757 and say i have a suggestion and i he will get to you when he can')
+	await bot.say('ok DM my owner Kazuto Kirigaya#8757 and say i have a suggestion and i he will get to you when he can')
 	
-@client.command()
+@bot.command()
 async def extra():
-	await client.say('same with the h!suggestion command DM my owner Kazuto Kirigaya#8757 and say i need help and he will get to you when he can')
+	await bot.say('same with the h!suggestion command DM my owner Kazuto Kirigaya#8757 and say i need help and he will get to you when he can')
 
 bot.run(os.getenv('BOT_TOKEN'))
 
