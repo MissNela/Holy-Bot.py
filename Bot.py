@@ -52,7 +52,7 @@ async def CoO():
        
 )
    
-    await client.say(embed = embed)
+    await client.say(embed=embed)
 	
 		
 @bot.command()
