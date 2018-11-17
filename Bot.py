@@ -30,29 +30,15 @@ async def on_ready():
 
 @client.command(pass_context=True)
 async def dev():
-    embed = discord.Embed(
-        title = "Bot Developer",
-        description = "@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed",
-      
-	colour = discord.Colour.blue()	
-	    
-) 
+    
 
-   await bot.say(embed=embed)
+         
+   await bot.say("@Kazuto Kirigaya#8757 is the owner...... also DM him about any command suggestions or if any extra help is needed")
 		 
 @client.command(pass_context=True)
 async def CoO():
-    embed = discord.Embed(
-        title = "Co-Owner",
-        description = """
-        Co-Owner of this server is Mrs.Nela
-        """,
-        
-        color = discord.Color.dark_blue()
-       
-)
-   
-    await bot.say(embed=embed)
+    
+    await bot.say("Co-Owner of server is Mrs.Nela!")
 	
 		
 @bot.command()
